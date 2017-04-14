@@ -8,7 +8,7 @@
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
 
-  "TAB1_TITLE": "Items",
+  "TAB1_TITLE": "Home",
   "TAB2_TITLE": "Search",
   "TAB3_TITLE": "Settings",
 
@@ -17,16 +17,16 @@
   "TUTORIAL_SKIP_BUTTON" : "Skip",
   "TUTORIAL_CONTINUE_BUTTON" : "Continue",
 
-  "TUTORIAL_SLIDE1_TITLE": "Welcome to the Ionic Super Starter",
-  "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to the Course Manager Demo",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Course Manager Demo</b> will give you a great idea of what Taryn can accomplish in a short amount of time.",
 
-  "TUTORIAL_SLIDE2_TITLE": "How to use the Super Starter",
-  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.",
+  "TUTORIAL_SLIDE2_TITLE": "How to use the Course Manager Demo",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "The demo can be used on both desktop and is side-loaded onto Taryn's phone.",
 
   "TUTORIAL_SLIDE3_TITLE": "Getting Started",
-  "TUTORIAL_SLIDE3_DESCRIPTION": "Need help? Check out the Super Starter README for a full tutorial",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "The demo is built with Ionic v3 using Angular v4",
 
-  "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Try?",
 
   "WELCOME_INTRO" : "The starting point for your next great Ionic app",
 

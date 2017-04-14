@@ -24,6 +24,7 @@ import { User } from '../providers/user';
 import { Api } from '../providers/api';
 import { Settings } from '../providers/settings';
 import { Items } from '../mocks/providers/items';
+import { Courses } from '../mocks/providers/courses';
 
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
 
@@ -31,6 +32,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { DashboardPage } from '../pages/dashboard/dashboard';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -74,7 +77,8 @@ let pages = [
   ItemCreatePage,
   MenuPage,
   SettingsPage,
-  SearchPage
+  SearchPage,
+  DashboardPage
 ];
 
 export function declarations() {
@@ -90,6 +94,7 @@ export function providers() {
     User,
     Api,
     Items,
+    Courses,
 
     { provide: Settings, useFactory: provideSettings, deps: [ Storage ] },
     // Keep this to enable Ionic's runtime error handling during development
