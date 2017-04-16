@@ -1,3 +1,3 @@
 export class Course {
-    constructor(public description: string) {}
+    constructor(public name: string, public description: string, public imgUrl: string) {}
 }

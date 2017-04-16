@@ -1,6 +1,6 @@
 import { TabsPage } from './tabs/tabs';
 import { TutorialPage } from './tutorial/tutorial';
-import { ListMasterPage } from './list-master/list-master';
+// import { ListMasterPage } from './list-master/list-master';
 import { SearchPage } from './search/search';
 import { SettingsPage } from './settings/settings';
 import { DashboardPage } from './dashboard/dashboard';

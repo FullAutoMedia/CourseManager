@@ -6,7 +6,7 @@ export class Courses {
   private _courses: Course[] = [];
   
   constructor() {      
-    this._courses.push(new Course("testcouse1"));
+    // this._courses.push(new Course("notmock", "testcouse1"));
   }
 
   public get(): Course[] {

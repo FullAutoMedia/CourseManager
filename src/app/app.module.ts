@@ -33,7 +33,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { CourseListComponent } from '../components/course-list/course-list.component';
+
 import { DashboardPage } from '../pages/dashboard/dashboard';
+import { CourseDetailPage } from '../pages/course-detail/course-detail';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -78,7 +81,9 @@ let pages = [
   MenuPage,
   SettingsPage,
   SearchPage,
-  DashboardPage
+  DashboardPage,
+  CourseDetailPage,
+  CourseListComponent
 ];
 
 export function declarations() {

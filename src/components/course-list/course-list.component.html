@@ -1,0 +1,11 @@
+<ion-list>
+    <ion-item *ngFor="let course of currentCourses">
+      <button ion-item (click)="openCourse(course)">
+        <ion-avatar item-left>
+            <img [src]="course.imgUrl" />
+          </ion-avatar>
+        <h2>{{ course.name }}</h2>
+        <p>{{ course.description }}</p>
+      </button>
+    </ion-item>    
+  </ion-list>

@@ -4,6 +4,9 @@ import { MenuController, NavController } from 'ionic-angular';
 
 import { WelcomePage } from '../welcome/welcome';
 
+//TODO: for devl
+import { DashboardPage } from '../dashboard/dashboard';
+
 import { TranslateService } from 'ng2-translate/ng2-translate';
 
 
@@ -50,6 +53,9 @@ export class TutorialPage {
         }
       ];
     });
+
+    //TODO: for devl only
+    this.navCtrl.setRoot(DashboardPage);
   }
 
   startApp() {

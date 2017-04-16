@@ -8,15 +8,5 @@
 
 
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let course of currentCourses">
-      <button ion-item (click)="openItem(item)">
-        <ion-avatar item-left>
-            <img src="assets/img/speakers/bear.jpg" />
-          </ion-avatar>
-        <h2>{{ course.description }}</h2>
-        <p>sometext</p>
-      </button>
-    </ion-item>    
-  </ion-list>
+  <ae-course-list></ae-course-list>
 </ion-content>
