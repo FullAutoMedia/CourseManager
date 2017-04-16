@@ -1,29 +1,29 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { ItemDetailPage } from '../item-detail/item-detail';
-import { Items } from '../../providers/providers';
-import { Item } from '../../models/item';
+import { CourseDetailPage } from '../course-detail/course-detail';
+import { Courses } from '../../providers/providers';
+import { Course } from '../../models/models';
 
 @Component({
   selector: 'page-search',
   templateUrl: 'search.html'
 })
 export class SearchPage {
-  currentItems: any = [];
+  currentCourses: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public items: Items) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public courses: Courses) {}
 
   /**
    * Perform a service for the proper items.
    */
-  getItems(ev) {
+  getCourses(ev) {
     let val = ev.target.value;
     if(!val || !val.trim()) {
-      this.currentItems = [];
+      this.currentCourses = [];
       return;
     }
-    this.currentItems = this.items.query({
+    this.currentCourses = this.courses.query({
       name: val
     });
   }
@@ -31,9 +31,9 @@ export class SearchPage {
   /**
    * Navigate to the detail page for this item.
    */
-  openItem(item: Item) {
-    this.navCtrl.push(ItemDetailPage, {
-      item: item
+  openCourse(course: Course) {
+    this.navCtrl.push(CourseDetailPage, {
+      course: course
     });
   }
 

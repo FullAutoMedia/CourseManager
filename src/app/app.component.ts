@@ -47,7 +47,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Home', component: DashboardPage }
+    { title: 'Home', component: DashboardPage },
     // { title: 'Tutorial', component: TutorialPage },
     // { title: 'Welcome', component: WelcomePage },
     // { title: 'Tabs', component: TabsPage },
@@ -59,7 +59,7 @@ export class MyApp {
     // { title: 'Master Detail', component: ListMasterPage },
     // { title: 'Menu', component: MenuPage },
     // { title: 'Settings', component: SettingsPage },
-    // { title: 'Search', component: SearchPage }
+    { title: 'Search', component: SearchPage }
   ]
 
   constructor(translate: TranslateService, platform: Platform, settings: Settings, config: Config, statusBar: StatusBar, splashScreen: SplashScreen) {

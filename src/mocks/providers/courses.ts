@@ -39,4 +39,22 @@ export class Courses {
       this._courses[i] = course;
     }
   }
+
+  query(params?: any) {
+    if(!params) {
+      return this._courses;
+    }
+
+    return this._courses.filter((course) => {
+      for(let key in params) {
+        let field = course[key];
+        if(typeof field == 'string' && field.toLowerCase().indexOf(params[key].toLowerCase()) >= 0) {
+          return course;
+        } else if(field == params[key]) {
+          return course;
+        }
+      }
+      return null;
+    });
+  }
 }

@@ -52,10 +52,7 @@ export class TutorialPage {
           image: 'assets/img/ica-slidebox-img-3.png',
         }
       ];
-    });
-
-    //TODO: for devl only
-    this.navCtrl.setRoot(DashboardPage);
+    });    
   }
 
   startApp() {
