@@ -14,11 +14,12 @@
 
 
 <ion-content padding>
-<div class="course-profile" text-center #profilePic [style.background-image]="'url(' + course.imgUrl + ')'">
-  </div>
+<div class="course-profile" text-center #profilePic [style.background-image]="'url(' + course.imgUrl + ')'"></div>
 
   <div class="course-detail" padding>
     <h2>{{ course.name }}</h2>
     <p>{{ course.description }}</p>
+    <br />
+    <div [innerHtml]="course.summary"></div>
   </div>
 </ion-content>
